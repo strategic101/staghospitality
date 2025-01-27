@@ -585,7 +585,7 @@ li {
 .hero {
   height: 550px;
   background: #dfbd69;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 .hero .container1 {
   padding-inline: 1rem;
@@ -1681,5 +1681,4 @@ button.btn-default:hover {
   color: white;
   text-decoration: none;
 } /*# sourceMappingURL=main.css.map */
-
 
