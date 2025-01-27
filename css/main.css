@@ -99,13 +99,13 @@ li {
 .header {
   position: relative;
   background: #dfbd69;
-  padding-block: .5rem;
+  /* padding-block: .5rem; */
 }
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 0.5rem;
+  /* padding-block: 0.5rem; */
 }
 .header .search-icon {
   color: #4c9cd2;
@@ -608,7 +608,7 @@ li {
   text-shadow: 1px 1px #0073c3;
 }
 .hero .swiper-slide figure {
-  height: 500px;
+  height: 450px;
   margin: 0;
   position: relative;
   overflow: hidden;
@@ -718,7 +718,7 @@ li {
   line-height: 29px;
   font-weight: 500;
   color: white;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 .hero .swiper-custom-pagination .swiper-pagination-bullet {
   width: auto;
