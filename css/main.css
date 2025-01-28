@@ -112,8 +112,9 @@ li {
   font-size: 22px;
 }
 .header .logo {
-  width: 150px;
+  width: 100px;
   height: 100px;
+
 }
 .header .logo img {
   height: 100%;
@@ -627,7 +628,7 @@ li {
   height: 100%;
   background-image: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.3),
     rgba(0, 0, 0, 0.5)
   );
   z-index: 2;
@@ -736,7 +737,7 @@ li {
   opacity: 0.3;
   height: 0.25rem;
   width: 0.75rem;
-  background-color: white;
+  background-color: black;
   display: block;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
@@ -772,7 +773,7 @@ li {
   .hero {
     height: calc(100vh - 83px);
     background: #dfbd69;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
   }
   .hero .container1 {
     padding-inline: 1rem;
