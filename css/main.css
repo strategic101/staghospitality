@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root{
   --sdclr:#0073c3;
-
+  --text-dark:#020617;
+  --text-light: #1e293b;
 }
 
 html {
@@ -807,6 +808,64 @@ li {
   display: none;
 }
 
+/* WHY CHOOSE US */
+.choose__container {
+  display: grid;
+  gap: 2rem;
+  overflow: hidden;
+  /* padding-inline:15px; */
+  margin-top: 60px;
+  padding: 120px 16px;
+}
+
+.choose__image img {
+  max-width: 475px;
+  margin-inline: auto;
+  border-radius: 32px;
+  box-shadow: 30px -30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.choose__list {
+  margin-top: 4rem;
+  display: grid;
+  gap: 48px;
+}
+
+.choose__list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.choose__list li span {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 32px;
+  color: var(--sdclr);
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+
+.choose__list li h4 {
+  margin-bottom: 5px;
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.choose__list li p {
+  color: var(--text-light);
+  font-size: 16px;
+}
+.choose__image img {
+  max-width: 475px;
+  margin-inline: auto;
+  border-radius: 2rem;
+  box-shadow: 30px -30px 0px rgba(0, 0, 0, 0.1);
+  display: flex
+  ;
+      width: 100%;
+}
 @media screen and (min-width: 1024px) {
   .hero {
     height: calc(100vh - 110px);
@@ -874,6 +933,11 @@ li {
   .headcontent{
     margin-top: 0px;
   }
+  .choose__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
 }
 .snapshots p {
   color: #ffffff;
@@ -1029,6 +1093,30 @@ li {
     color: #e6e6e6;
   }
 }
+
+  .choose__container {
+    margin-top: 0px;
+    position: relative;
+    padding-bottom: 140px !important;
+  }
+  .choose__container .section-subtitle, .choose__container .section-title{
+    text-align: left;
+
+  }
+  .popular__bg {
+    position: absolute;
+    left: 75%;
+    bottom: -10%;
+    transform: translate(-65%, -50%) rotate(-135deg);
+    height: 192px;
+    width: unset;
+    aspect-ratio: 1;
+    object-fit: contain;
+  }
+  .headcontent{
+    margin-top: 50px;
+  }
+
 .about {
   background-color: #ffffff;
 }
@@ -1132,6 +1220,23 @@ li {
     padding: 1rem;
     border-radius: 50%;
     cursor: pointer;
+  }
+  .choose__container {
+    margin-top: 0px;
+    position: relative;
+    padding-bottom: 140px !important;
+  }
+
+  .popular__bg {
+    position: absolute;
+    left: 80%;
+    /* bottom: 40%; */
+    top:20%;
+    transform: translate(-65%, -50%) rotate(-135deg);
+    height: 220px;
+    width: unset;
+    aspect-ratio: 1;
+    object-fit: contain;
   }
 }
 .belief {
