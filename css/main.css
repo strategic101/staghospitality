@@ -280,6 +280,9 @@ POPULAR PACKAGES */
   overflow:hidden;
   box-shadow: 2px 2px 5px 7px rgba(0, 0, 0, 0.1);
 }
+.poppackages img{
+  width: 100%;
+}
 .poppackages .cardsouter>*{
   margin-top:25px;
 }
@@ -1019,9 +1022,46 @@ font-size: 17px;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
+  .poppackages{
+    /* max-width: 1400px; */
+    margin-bottom: 150px;
+  }
+  .poppackages .cardsouter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+    max-width: 1400px;
+    margin-inline: auto;
+  
+  }
+  .poppackages .cardsouter .card{
+    display:flex;
+   gap:20px; 
 
+
+   
+  }
+  .poppackages .cardsouter .card figure{
+    flex: 0 0 50%;
+
+  }
+  .poppackages .cardsouter .card img{
+    height: 100%;
+  }
+  .poppackages .cardsouter .card .cardcontent{
+    margin-top: 30px;
+    align-self: center;
+
+  }
+  .poppackages .cardtitle p{
+    font-size: 20px;
+  }
+  .choose__container{
+    padding-bottom: 50px !important;
+  }
+ 
 }
-.snapshots p {
+/* .snapshots p {
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;
@@ -1051,9 +1091,9 @@ font-size: 17px;
   object-fit: cover;
   background-position: center center;
   border-radius: 50%;
-}
+} */
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .snapshots h3 {
     font-size: 30px;
   }
@@ -1119,9 +1159,9 @@ font-size: 17px;
 .question .bottomcontent .cards .likenolike :hover:first-child {
   transition: all 0.5s ease-in-out;
   color: #e6e6e6;
-}
+} */
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .question {
     margin-top: 12rem;
   }
@@ -1174,12 +1214,12 @@ font-size: 17px;
     transition: all 0.5s ease-in-out;
     color: #e6e6e6;
   }
-}
+} */
 
   .choose__container {
     margin-top: 0px;
     position: relative;
-    padding-bottom: 140px !important;
+    /* padding-bottom: 140px !important; */
   }
   .choose__container .section-subtitle, .choose__container .section-title{
     text-align: left;
@@ -1306,7 +1346,7 @@ font-size: 17px;
   .choose__container {
     margin-top: 0px;
     position: relative;
-    padding-bottom: 140px !important;
+    /* padding-bottom: 140px !important; */
   }
 
   .popular__bg {
