@@ -81,6 +81,11 @@ h6 {
 .mtop{
   margin-top: 80px;
 }
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
 .txtcenter {
   text-align: center;
 }
@@ -1236,7 +1241,7 @@ font-size: 17px;
     object-fit: contain;
   }
   .headcontent{
-    margin-top: 50px;
+    margin-top: 100px;
   }
 
 .about {
@@ -1290,7 +1295,153 @@ font-size: 17px;
   cursor: pointer;
 }
 
+/* TRIP PLACES */
+.trip {
+  overflow: hidden;
+ 
+}
+
+.trip .title {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.trip .title h1 {
+  font-size: 5rem;
+  margin: 2rem;
+}
+
+.trip .title .desc {
+  width: 70%;
+  margin: 0 auto;
+  color: var(--text-light);
+  font-size: 16px;
+}
+
+.trip .row {
+  /* width: 80vw; */
+  position: relative;
+ 
+}
+
+.trip .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.trip .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 500px;
+}
+
+.trip .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+
+.custom-next,
+.custom-prev {
+  position: absolute;
+  top: -7%;
+  transform: translateY(-50%);
+  background-color: var(--sdclr);
+  color: white;
+  font-size: 2.7rem;
+  border-radius: 50%;
+  height: 4.5rem;
+  width: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-next {
+  right:5%;
+}
+.custom-prev {
+  left: 65%;
+}
+
+.custom-pagination {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet {
+  width: 30px;
+  height: 7px;
+  border-radius: 5px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black;
+}
+
+.swiper-pagination-bullet:not(:last-child) {
+  margin-right: 10px;
+}
+
+.trip .explore {
+  text-align: center;
+  margin-top: 8rem;
+}
+
+@media (max-width: 768px) {
+  .trip .title p {
+    width: 90%;
+  }
+
+  .trip .swiper-slide {
+    height: 400px;
+  }
+  .trip .container {
+    max-width: 85rem;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .trip .title h1 {
+    font-size: 4rem;
+  }
+}
+
+
 @media screen and (min-width: 1024px) {
+  .trip {
+  
+    margin-inline: 15%;
+  }
+
+  .custom-next,
+.custom-prev {
+  position: absolute;
+  top: -8%;
+  transform: translateY(-50%);
+  background-color: var(--sdclr);
+  color: white;
+  font-size: 2.7rem;
+  border-radius: 50%;
+  height: 4.5rem;
+  width: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-next {
+  right:5%;
+}
+.custom-prev {
+  left: 85%;
+}
   .about .aboutwrapper {
     position: relative;
   }
