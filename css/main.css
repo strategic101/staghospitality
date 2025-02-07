@@ -1312,10 +1312,11 @@ font-size: 17px;
 }
 
 .trip .title .desc {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   color: var(--text-light);
   font-size: 16px;
+  padding-inline:15px;
 }
 
 .trip .row {
@@ -1393,9 +1394,11 @@ font-size: 17px;
 }
 
 @media (max-width: 768px) {
-  .trip .title p {
+  /* .trip .title p {
     width: 90%;
-  }
+  } */
+
+
 
   .trip .swiper-slide {
     height: 400px;
@@ -1418,7 +1421,13 @@ font-size: 17px;
   
     margin-inline: 15%;
   }
-
+  .trip .title .desc {
+    width: 70%;
+    margin: 0 auto;
+    /* color: var(--text-light);
+    font-size: 16px;
+    padding-inline: 15px; */
+}
   .custom-next,
 .custom-prev {
   position: absolute;
